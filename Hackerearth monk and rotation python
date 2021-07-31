@@ -1,0 +1,11 @@
+t=int(input())
+for i in range(t):
+    n,k=[int(x) for x in (input().split())]
+    d=0
+    while(d<n):
+        a=[int(x) for x in (input().split())]
+        d=len(a)
+        if a == n :
+            break
+    g = k%n
+    print(*(a[n-g:]+a[:n-g]))
